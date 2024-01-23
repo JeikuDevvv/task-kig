@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Burned&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.task-manager {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Rubik Burned', system-ui;
+    text-align: center;
+    color: #333;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    /* Additional styles for task list */
+    background-color: #eee;
+    padding: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.task-details {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.task-title {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.details-button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #0b7dda;
+}
+
+.delete-button {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d14848;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add styles for dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the button for toggling dark and light modes */
+.toggle-mode {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Additional styles for dark mode */
+.dark-mode .task-manager {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+/* Additional styles for dark mode */
+.dark-mode .task-form input,
+.dark-mode .task-form button,
+.dark-mode .task-list {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+}
+
+.dark-mode .checkbox {
+    border-color: #666;
+    background-color: #555;
+    color: #fff;
+}
+
+/* Additional styles for dark mode */
+.dark-mode .delete-button {
+    background-color: #ff6666;
+}
+
+.dark-mode .delete-button:hover {
+    background-color: #e65252;
+}
